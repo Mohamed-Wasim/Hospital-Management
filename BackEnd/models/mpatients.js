@@ -8,6 +8,10 @@ const patientSchema = new Schema({
     },
     ptn:{
         ptnDtl:{
+            ptnNm:{
+                type:string,
+                require:true
+            },
             gen:{
                 type:String,
                 require:true

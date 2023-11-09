@@ -12,11 +12,12 @@ const userSchema = new Schema({
         require:true
     },
     psWd:{
-        type:string,
+        type:String,
         require:true
     },
     usrTyp:{
         type:String,
+        enum:['patient','doctor','nurse'],
         require:true
     }
 },
